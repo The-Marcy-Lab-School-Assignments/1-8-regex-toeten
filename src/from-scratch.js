@@ -48,7 +48,9 @@ const matchAllWords = (str) => {
   return str.match(/[a-zA-Z']+/g) || [];
 };
 
-const replaceAllNumbers = (str) => { };
+const replaceAllNumbers = (str) => {
+  return str.replace(/\d+/g, "???")
+};
 
 const fixFileName = (str) => { };
 
