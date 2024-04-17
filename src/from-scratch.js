@@ -44,7 +44,9 @@ const matchAllNumbersAsNumbers = (str) => {
   return matches.map(Number);
 };
 
-const matchAllWords = (str) => { };
+const matchAllWords = (str) => {
+  return str.match(/[a-zA-Z']+/g) || [];
+};
 
 const replaceAllNumbers = (str) => { };
 
