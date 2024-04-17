@@ -30,7 +30,10 @@ const isValidEmail = (str) => {
   return /^[a-zA-z0-9_.]+@[a-z]+\.[a-z]{2,3}$/.test(str)
 };
 
-const isValidPhoneNumber = (str) => { };
+const isValidPhoneNumber = (str) => {
+  return /^(\(\d{3}\)|\d{3})[-.\s]\d{3}[-.\s]?\d{4}$/.test(str);
+};
+console.log(isValidPhoneNumber('(860)-410-7890'))
 
 const matchAllNumbers = (str) => { };
 
