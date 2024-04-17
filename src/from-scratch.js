@@ -10,7 +10,9 @@ const hasCatsOrDogs = (str) => {
   return /(cats|dogs)/gi.test(str)
 };
 
-const hasVowelStart = (str) => { };
+const hasVowelStart = (str) => {
+  return /^[aeiou]/i.test(str)
+};
 
 const hasPunctuationEnd = (str) => { };
 
