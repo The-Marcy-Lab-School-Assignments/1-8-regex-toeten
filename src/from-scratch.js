@@ -39,7 +39,10 @@ const matchAllNumbers = (str) => {
   return str.match(/\d+/g) || [];
 };
 
-const matchAllNumbersAsNumbers = (str) => { };
+const matchAllNumbersAsNumbers = (str) => {
+  const matches = str.match(/\d+/g) || [];
+  return matches.map(Number);
+};
 
 const matchAllWords = (str) => { };
 
