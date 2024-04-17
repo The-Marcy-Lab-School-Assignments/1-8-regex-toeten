@@ -1,34 +1,38 @@
-const helloWorldRegex = (str) => {};
+const helloWorldRegex = (str) => {
+  return /hello world/gi.test(str)
+};
 
-const hasAVowel = (str) => {};
+const hasAVowel = (str) => {
+  return /[aeiou]/gi.test(str)
+};
 
-const hasCatsOrDogs = (str) => {};
+const hasCatsOrDogs = (str) => { };
 
-const hasVowelStart = (str) => {};
+const hasVowelStart = (str) => { };
 
-const hasPunctuationEnd = (str) => {};
+const hasPunctuationEnd = (str) => { };
 
-const hasNothingOrDigits = (str) => {};
+const hasNothingOrDigits = (str) => { };
 
-const hasNoFlippers = (str) => {};
+const hasNoFlippers = (str) => { };
 
-const isValidEmail = (str) => {};
+const isValidEmail = (str) => { };
 
-const isValidPhoneNumber = (str) => {};
+const isValidPhoneNumber = (str) => { };
 
-const matchAllNumbers = (str) => {};
+const matchAllNumbers = (str) => { };
 
-const matchAllNumbersAsNumbers = (str) => {};
+const matchAllNumbersAsNumbers = (str) => { };
 
-const matchAllWords = (str) => {};
+const matchAllWords = (str) => { };
 
-const replaceAllNumbers = (str) => {};
+const replaceAllNumbers = (str) => { };
 
-const fixFileName = (str) => {};
+const fixFileName = (str) => { };
 
-const nameRedacter = (str) => {};
+const nameRedacter = (str) => { };
 
-const camelToSnakeCase = (str) => {};
+const camelToSnakeCase = (str) => { };
 
 module.exports = {
   helloWorldRegex,
