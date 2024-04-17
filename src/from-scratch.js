@@ -33,9 +33,11 @@ const isValidEmail = (str) => {
 const isValidPhoneNumber = (str) => {
   return /^(\(\d{3}\)|\d{3})[-.\s]\d{3}[-.\s]?\d{4}$/.test(str);
 };
-console.log(isValidPhoneNumber('(860)-410-7890'))
+//console.log(isValidPhoneNumber('(860)-410-7890'))
 
-const matchAllNumbers = (str) => { };
+const matchAllNumbers = (str) => {
+  return str.match(/\d+/g) || [];
+};
 
 const matchAllNumbersAsNumbers = (str) => { };
 
