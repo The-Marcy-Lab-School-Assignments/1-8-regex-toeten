@@ -66,7 +66,9 @@ const nameRedacter = (str) => {
 };
 
 
-const camelToSnakeCase = (str) => { };
+const camelToSnakeCase = (str) => {
+  return str.replace(/[A-Z]/g, (match) => "_" + match.toLowerCase())
+};
 
 module.exports = {
   helloWorldRegex,
